@@ -1,0 +1,60 @@
+///// Instalar git por consola /////
+
+sudo yum install git 
+
+///// Verificar si se encuentra instalado y qye version tiene /////
+
+git --version
+
+///// Inicializar repositorio /////////
+
+git init
+
+////// listar archivos ///////
+
+ls 
+ls -l para verificar cuando se crearon los archivos 
+
+////// verificar la configuración //////
+
+git config --list
+
+
+///// Agregar nombre del creador del repositorio ////
+
+git config --global user.name "Andres vargas"
+
+////// Agregar correo del creador del repositorio ///
+ 
+git config --global user.email "andres9304v@gmail.com"
+
+///// Agregar el link del repositorio de git hub /////
+
+git remote add origin + link
+
+///// Remover el link agregado al repositorio de git hub ///////
+
+git remote set-url origin + link 
+
+///// verificar si estan agregados los archivos en mi repositorio local
+
+color rojo = solo estan guardado repositorio local
+color verde = ya se encuentra en el repositorio remoto (git hub)
+
+git status
+
+////  alamacenar los archivos en el repositorio remoto en el branch en la rama master //
+
+git add . carga todos los archivos 
+
+git add . + nombre del archivo 
+
+
+////  remomer archivo de el repositorio 
+
+git rm --cached + nombre del archivo 
+
+////// para subir los archivos a nuestro repositorio local en (git hub)
+
+git comit -m "Version 1"
+
